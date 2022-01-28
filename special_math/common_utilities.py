@@ -12,6 +12,9 @@ DATETIME_FORMAT = '%Y-%m-%dT%H:%M:%SZ'
 
 
 class SpecialMathCalc:
+    """
+    An instance of the special math calculator
+    """
     special_cache = None
 
     def __init__(self):
@@ -38,6 +41,9 @@ class SpecialMathCalc:
 
 # TODO: TechDebt: Move this func and utils package to stand alone to avoid duplication
 class RequestUtils:
+    """
+    Utility for the client request
+    """
 
     def __init__(self):
         self.request_time = datetime.utcnow()
@@ -45,6 +51,11 @@ class RequestUtils:
         self.request_id = uuid4()
 
     def get_request_context(self) -> dict:
+        """
+        Get the request context members, such as a unique id and the request-time to pass back to the client for their
+        records
+        :return: A dictionary with the context of the request
+        """
         return {
             "request-id": self.request_id,
             "request-time": self.request_timestamp

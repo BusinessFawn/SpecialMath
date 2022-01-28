@@ -120,4 +120,4 @@ Wrote HTML report to htmlcov/index.html
 
 A new directory called `htmlcov` will now be present, open the `index.html` file to review coverage results.
 
-## Thanks for checking out my project!
+## Thanks for checking out this project!
