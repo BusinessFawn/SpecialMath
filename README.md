@@ -9,17 +9,22 @@ Python 3.10 is suggested to run this project and can be
 For development and testing you'll want to
 [clone the repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
-## Initial Setup
 The suggested IDE for this project is [IntelliJ](https://www.jetbrains.com/idea/download) with the [Python plugin](https://www.jetbrains.com/help/idea/plugin-overview.html).
 
-### Create a virtual environment(Mac)
+We're using [Flask](https://flask.palletsprojects.com/en/2.0.x/),
+getting familiar might be good.
+
+## Initial Setup
+
+### Create a virtual environment (Mac)
 From the root of the project
 ```
 python3.10 -m venv venv
 . venv/bin/activate
 pip install -r requirements.txt
 ```
-This will build and install the required packages in your virtual environment.
+You've now built the virtual environment and loaded
+it with the required packages.
 
 ### Starting the web server
 From the root of the project
@@ -76,7 +81,7 @@ You should see output like:
 ```
 ============================= test session starts ==============================
 platform darwin -- Python 3.10.2, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
-rootdir: /usr/git/SpecialMath, configfile: setup.cfg, testpaths: tests
+rootdir: /usr/me/git/SpecialMath, configfile: setup.cfg, testpaths: tests
 plugins: mock-3.7.0
 collected 18 items                                                             
 
@@ -98,7 +103,7 @@ A successful test run should be presented
 ```
 ============================= test session starts ==============================
 platform darwin -- Python 3.10.2, pytest-6.2.5, py-1.11.0, pluggy-1.0.0
-rootdir: /usr/git/SpecialMath, configfile: setup.cfg, testpaths: tests
+rootdir: /usr/me/git/SpecialMath, configfile: setup.cfg, testpaths: tests
 plugins: mock-3.7.0
 collected 18 items                                                             
 
